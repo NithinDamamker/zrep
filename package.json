@@ -1,0 +1,30 @@
+{
+  "name": "mycappoj_new",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4",
+    "@sap/xssec": "^3",
+    "hdb": "^0.19.6",
+    "@sap/cds-hana": "^2"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^7"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "auth": "basic",
+      "db": "hana"
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  }
+}
